@@ -1,0 +1,538 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    color: chocolate;
+    text-align: center;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #111;
+}
+
+h1 {
+    color: cyan;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 30px;
+    color: rgb(229, 255, 0);
+}
+
+ul li {
+    padding: 10px;
+    font-size: 20px;
+    color: chocolate;
+    list-style: none;
+    font-weight: 300;
+}
+
+li i {
+    color: cyan;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    height: 90vh;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+/* PORTFOLIO TexT*/
+#org {
+    color: orange;
+}
+
+#white {
+    color: white;
+}
+
+#green {
+    color: green;
+}
+
+/* navbar section */
+
+.nv {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.nv ul {
+    display: flex;
+}
+
+.nv ul li a {
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    color: chocolate;
+}
+
+.nv ul li a:hover {
+    transition: 1s ease;
+    border-color: cyan;
+    color: rgb(229, 255, 0);
+}
+
+section .nv ul li a:hover {
+    color: #1a1a1a;
+    background-color: white;
+}
+
+/* home section */
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.user-p {
+    padding-top: 60px;
+}
+
+.user-p img {
+    min-width: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 5px cyan,
+        0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan,
+        0 0 80px cyan;
+    border: 6px solid rgba(11, 233, 215, 0.37);
+}
+
+/* about section */
+
+#details {
+    width: 100%;
+    padding-top: 60px;
+}
+
+.details {
+    display: flex;
+    margin: 0 4vw;
+}
+
+.details p {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    text-align: left;
+}
+
+.fsd img {
+    width: 40vw;
+    height: 75vh;
+}
+
+/* education section */
+
+#education {
+    width: 100%;
+    padding-top: 60px;
+}
+
+table {
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+th {
+    padding: 2rem;
+    color: rgb(248, 252, 7);
+}
+
+table,
+th,
+td {
+    border: 1px solid cyan;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    list-style: none;
+}
+
+td a:hover {
+    color: cyan;
+}
+
+/* skill section */
+
+#skills h2 {
+    text-align: justify;
+}
+
+#skills {
+    padding-top: 60px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills ul li {
+    text-align: left;
+}
+
+/* project section */
+
+#Project {
+    height: 200vh;
+    padding-top: 60px;
+}
+
+.project-1{
+    height: 83vh;
+}
+
+.det {
+    display: flex;
+}
+.doc{
+    width: 50%;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    margin: 0 2%;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slider img{
+    width: 100%;
+    height: 100%;
+  }
+#video1{
+    width: 320px;
+    height: 420px;
+    margin: 10px 40px;
+}
+
+.det h3 {
+    color: chocolate;
+}
+
+.det h3,
+.det p {
+    line-height: 2;
+    text-align: start;
+}
+
+.det h3 span,
+.det p span {
+    color: yellow;
+}
+
+/* contact section */
+
+#contact {
+    padding-top: 60px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* form */
+
+.contact div form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact div form input {
+    height: 6vh;
+    width: 50vw;
+    color: black;
+    margin-top: 4vh;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.contact div form input:hover {
+    border-color: aqua;
+}
+
+.contact div form textarea {
+    color: black;
+    margin-top: 4vh;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.contact div form textarea:hover {
+    border-color: cyan;
+}
+
+#submit {
+    width: 10vw;
+    height: 6vh;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5vh 0 1vh 20vw;
+    background-color: transparent;
+    border: 2px solid chocolate;
+    color: chocolate;
+}
+
+#submit:hover {
+    transition: 1s ease;
+    border-color: cyan;
+    color: rgb(229, 255, 0);
+}
+
+.contact-det ul li {
+    text-align: start;
+    margin-top: 20px;
+
+}
+
+.contact-det ul li a:hover {
+    color: aqua;
+}
+
+#openbar,
+#closebar {
+    display: none;
+}
+
+
+@media (max-width: 769px) {
+
+    .user-p img {
+        width: 75%;
+    }
+
+    .nv ul li a {
+        font-weight: 700;
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .user-p img {
+        width: 75%;
+    }
+
+    .fsd img {
+        width: 30vw;
+        height: 60vh;
+    }
+
+    td {
+        padding: 15px 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    th {
+        padding: 15px 6px;
+    }
+
+    #video1 img{
+        min-width: 180px;
+        width: 240px;
+    }
+
+}
+
+@media (max-width: 426px) {
+
+    h1 {
+        font-weight: 600;
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .fsd img {
+        display: none;
+    }
+
+    ul li {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    #openbar,
+    #closebar {
+        display: block;
+    }
+
+    .user-p img {
+        margin-top: 12vh;
+        min-width: 120px;
+        width: 75%;
+        border-radius: 50%;
+        box-shadow: 0 0 5px cyan,
+            0 0 5px cyan,
+            0 0 10px cyan,
+            0 0 20px cyan,
+            0 0 40px cyan;
+        border: 3px solid rgba(11, 233, 215, 0.37);
+    }
+
+    .nv ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        right: -220px;
+        background-color: black;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 6px 65px;
+        transition: 0.3s;
+    }
+
+    #menu.active {
+        right: 0px;
+    }
+
+    #closebar {
+        display: initial;
+        position: absolute;
+        top: 10px;
+        left: 16px;
+        font-size: 24px;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    td {
+        padding: 2px;
+        font-size: 12px;
+        font-weight: 300;
+        list-style: none;
+    }
+
+    th {
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    #Project {
+        height: 250vh;
+        padding-top: 60px;
+    }
+
+    .project-1,
+    .project-2 {
+        height: 100vh;
+    }
+
+    #video1 {
+        justify-content: center;
+        margin: 0;
+    }
+
+    #video1 img{
+        width: 260px;
+        height: 300px;
+    }
+    .doc{
+        width: 100%;
+    }
+    
+    .slider-container {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
+
+    .det {
+        flex-direction: column;
+    }
+
+    .det h3,
+    .det p {
+        line-height: 1.50;
+        text-align: justify;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact div form input,
+    .contact div form textarea {
+        width: 94vw;
+    }
+
+    .contact div form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #submit {
+        width: 20vw;
+        height: 8vh;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 5vh 0 0 0;
+    }
+
+    .contact-det ul li {
+        margin-top: 10px;
+        margin-left: 25vw;
+    }
+
+}
